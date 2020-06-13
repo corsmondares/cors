@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+  .mySlides {display:none;}
+
+  body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-image: url("bg1.jpg"); 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+    font-style: bold;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 180px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: red;
+    color: black;
+}
+.asd{
+  height: 20%;
+}
+.image {
+  width: 50px;
+  height: 50px;
+  /*float: left;
+  padding-left: ;*/
+background-size: cover;
+  
+}
+.header {
+    position: relative;
+    background-color: #F1F1F1;
+    text-align: center fixed;
+    padding: 1px;
+    background-image: url("headfoot.jpg");
+    background-repeat: no-repeat;
+    background-size: 1500px 300px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+
+</style>
+</head>
+<body>
+
+  <center>
+  <div class="header">
+  <table id="asd">
+  <p><td></center></td>
+    <td><center><h1>Rosemarie's Gallery </h1>
+     </p></center></td></p></table></div>
+<ul>
+  <li><a href="page3.html">BASIC INFO</a></li>
+  <li><a href="#contact">ADDITIONAL INFO</a></li>
+  <li style="float:right"><a class="active" href="index.html">EXIT</a></li>
+</ul>
+
+</body>
+</html>
+<center>
+
+<div class="w3-content w3-section" style="max-width:300px">
+  <img class="mySlides w3-animate-top" src="1img.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="2img.jpg" style="width:100%">
+  <img class="mySlides w3-animate-top" src="3img.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="4img.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script>
+
+
+
+
